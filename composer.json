@@ -1,0 +1,26 @@
+{
+    "name": "slgo99/laravel-error-report",
+    "description": "Get to know what's happening in your production environment!",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Sergio Lago",
+            "email": "sergio@sergiolago.es"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Slgo99\\LaravelErrorReport\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Slgo99\\LaravelErrorReport\\ServiceProvider"
+            ]
+        }
+    },
+    "minimum-stability": "dev",
+    "require": {}
+}
