@@ -26,7 +26,7 @@ class ServiceProvider extends Provider
     public function boot()
     {
         $this->app->make('Illuminate\Contracts\Debug\ExceptionHandler')->reportable(function (Throwable $e) {
-            if (config('error_report.enabled')) {
+            if (config('error_report.enabled') && !empty(config('error_report.emails'))) {
                 $request = request();
                 $route = "";
                 $middlewares = "";
