@@ -17,7 +17,7 @@ class ServiceProvider extends Provider
 
         $this->publishes([
             __DIR__.'/config/error_report.php' => config_path('error_report.php'),
-        ]);
+        ], 'config');
     }
 
     /**
