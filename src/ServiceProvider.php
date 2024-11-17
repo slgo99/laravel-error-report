@@ -2,10 +2,9 @@
 
 namespace Slgo99\LaravelErrorReport;
 
-use Illuminate\Support\ServiceProvider as Provider;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\Mail;
 use Throwable;
+use Illuminate\Support\Facades\Mail;
+use Illuminate\Support\ServiceProvider as Provider;
 
 class ServiceProvider extends Provider
 {
