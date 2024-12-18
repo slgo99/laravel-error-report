@@ -53,7 +53,7 @@ class ServiceProvider extends Provider
                 }
 
                 Mail::raw($html, function ($message) {
-                    $message->to(config('error_report.emails'))->subject("Internal Server Error");
+                    $message->to(explode(',', config('error_report.emails')))->subject('Internal Server Error');
                 });
             }
         });
